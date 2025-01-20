@@ -9,6 +9,16 @@ body {
 	padding:0;
 }
 
+button {
+	/* this removes the default styling */
+ background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+	}
 
 a {
 	/* this removes the line under our links */
@@ -39,6 +49,14 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+button {
+	padding: 8px 24px;
+	border-radius: 6px;
+	background-color: #3882f6;
+	color: white;
+	font-weight: 600;
 }
 
 .hero__logo {
@@ -86,4 +104,8 @@ footer {
 	min-width: 200px;
 	max-width: 600px;
 	height: auto;
+}
+
+.heroBlock button {
+	margin-top: 16px;
 }
