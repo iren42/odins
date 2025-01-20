@@ -27,10 +27,12 @@ h1 {
 	font-weight: 900;
 }
 
-header {
+header,
+.heroBlock {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin: 16px 0;
 }
 
 footer {
@@ -60,16 +62,28 @@ footer {
 	color: #f9faf8;
 }
 
-.heroBlock {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
-}
-
 .hero,
 .secondBlock,
 .thirdBlock,
 .fourthBlock {
-	padding: 8px 80px;
+	padding: 8px 120px;
+}
+
+.row {
+	display: flex;
+}
+
+.col {
+	flex: 50%;
+}
+
+.heroBlock__text{
+	margin-right: 32px;
+}
+
+.heroBlock__img {
+	margin-left: 32px;
+	min-width: 200px;
+	max-width: 600px;
+	height: auto;
 }
