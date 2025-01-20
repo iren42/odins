@@ -2,8 +2,13 @@ body {
 	display: flex;
 	flex-direction: column;
 	font-family: Roboto;
-	margin: 0;
 }
+
+*{
+	margin:0;
+	padding:0;
+}
+
 
 a {
 	/* this removes the line under our links */
@@ -22,30 +27,49 @@ h1 {
 	font-weight: 900;
 }
 
-.header {
+header {
 	display: flex;
-	justify-content: space-around;
-	padding: 8px;
+	justify-content: space-between;
 	align-items: center;
 }
 
-.header__logo {
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero__logo {
 	font-size: 24px;
 	font-weight: 900;
 }
 
-.header ul {
+header ul {
 	display:flex;
 	gap: 24px;
 }
 
-.header a {
+header a {
 	font-size: 18px;
 	color: #e5e7eb;
 }
 
 .hero,
-.footer {
+footer {
 	background-color: #1f2937;
 	color: #f9faf8;
+}
+
+.heroBlock {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.hero,
+.secondBlock,
+.thirdBlock,
+.fourthBlock {
+	padding: 8px 80px;
 }
