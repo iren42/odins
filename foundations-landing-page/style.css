@@ -51,11 +51,15 @@ footer {
 	align-items: center;
 }
 
+button,
+.callToAction {
+	background-color: #3882f6;
+	color: white;
+}
+
 button {
 	padding: 8px 24px;
 	border-radius: 6px;
-	background-color: #3882f6;
-	color: white;
 	font-weight: 600;
 }
 
@@ -90,24 +94,32 @@ footer,
 
 .row {
 	display: flex;
+	flex-wrap: wrap;
 }
 
-.col {
-	flex: 50%;
+.left,
+.right {
+	flex: 1 1 0;
+	margin-bottom: 16px;
+}
+
+.left {
+	margin-right: 16px;
+}
+.right{
+	margin-left: 16px;
 }
 
 .heroBlock__text{
-	margin-right: 32px;
+	word-wrap: break-word;
 }
 
 .heroBlock__img {
-	margin-left: 32px;
 	min-width: 200px;
-	max-width: 600px;
 	height: auto;
 }
 
-.heroBlock button {
+.heroBlock__btn {
 	margin-top: 16px;
 }
 
@@ -163,4 +175,21 @@ h2 {
 .quoteBlock__quote em {
 	font-size: 36px;
 	font-weight: lighter;
+}
+
+.fourthBlock {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.callToAction {
+	display: flex;
+	padding: 32px 64px;
+	border-radius: 8px;
+}
+
+.callToAction button {
+	display: flex;
+	flex-wrap: nowrap;
 }
