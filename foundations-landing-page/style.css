@@ -32,6 +32,10 @@ ul {
 	margin: 0;
 }
 
+img {
+	border-radius: 8px;
+}
+
 h1 {
 	font-size: 48px;
 	font-weight: 900;
@@ -95,19 +99,13 @@ footer,
 .row {
 	display: flex;
 	flex-wrap: wrap;
+	gap: 32px;
 }
 
 .left,
 .right {
 	flex: 1 1 0;
 	margin-bottom: 16px;
-}
-
-.left {
-	margin-right: 16px;
-}
-.right{
-	margin-left: 16px;
 }
 
 .heroBlock__text{
@@ -143,7 +141,6 @@ footer,
 .card img {
 	width: 100%;
 	height: auto;
-	border-radius: 8px;
 }
 
 .card p {
