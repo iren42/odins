@@ -120,7 +120,11 @@ footer,
 }
 
 .card {
-	width: 240px;
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 400px;
+	max-width: 560px;
+	min-width: 280px;
 	height: auto;
 }
 
