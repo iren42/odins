@@ -36,3 +36,19 @@ btn.addEventListener('click', function(event) {
 document.body.addEventListener('click',function(event) {
     console.log('The body was clicked!');
 });
+
+let isEven = (number) => number % 2 === 0;
+let	triple = number => number * 3;
+let	sum = (total, currentItem) => total + currentItem;
+
+function	sumOfTripledEvens(array)
+{
+	let	evens = array.filter(isEven);
+	let	tripledEvens = evens.map(triple);
+	let	sumTE = tripledEvens.reduce(sum, 0);
+	return (sumTE);
+}
+
+let	myArray = [10, 1, 3, 4, 5, 6];
+console.log(sumOfTripledEvens(myArray));
+console.log(sumOfTripledEvens([]));
